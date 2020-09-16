@@ -7,13 +7,21 @@
     "protractor-jasmine2-html-reporter": "0.0.7"
   },
   "scripts": {
-    "webdriver-update": "./node_modules/.bin/webdriver-manager update",
-    "webdriver-start": "./node_modules/.bin/webdriver-manager start",
-    "protractor": "./node_modules/.bin/protractor conf.js",
-    
+    "webdriver-update": "webdriver-manager update",
+    "webdriver-start": "webdriver-manager start",
+    "protractor": "protractor conf.js",
     "start": "npm run webdriver-update && npm run webdriver-start && npm run protractor"
-    
   },
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
-  
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "version": "1.0.0",
+  "main": "Autoreplenish.js",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
